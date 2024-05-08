@@ -1,0 +1,29 @@
+{
+    "intents": [
+        {
+            "tag": "saludo",
+            "patterns": ["hola", "buenos días", "buenas tardes", "buenas noches", "qué tal", "hello", "hi", "hey", "qué hay"],
+            "responses": ["¡Hola!", "¡Buen día!", "¡Hola, ¿en qué puedo ayudarte?", "¡Hola! ¿En qué puedo colaborar?", "Hello!", "Hi there!", "Hey!"]
+        },
+        {
+            "tag": "despedida",
+            "patterns": ["adios", "hasta luego", "nos vemos", "chao", "hasta pronto", "bye", "hasta la vista", "bye bye", "cuidate", "hasta la proxima"],
+            "responses": ["¡Adiós!", "¡Hasta luego!", "¡Nos vemos!", "¡Que te vaya bien!", "Goodbye!", "See you later!", "Bye bye!", "Take care!", "Hasta la próxima!"]
+        },
+        {
+            "tag": "agradecimiento",
+            "patterns": ["gracias", "muchas gracias", "te agradezco", "agradecido", "gracias por la ayuda", "mil gracias", "muy agradecido"],
+            "responses": ["¡De nada!", "¡Feliz de poder ayudar!", "¡No hay problema!", "¡A cualquier hora!", "¡Encantado de ayudarte!", "Glad I could help!"]
+        },
+        {
+            "tag": "acerca_del_bot",
+            "patterns": ["¿quién eres?", "explícate", "preséntate", "cuéntame sobre ti", "¿qué eres?", "qué haces", "qué puedes hacer", "qué sabes hacer"],
+            "responses": ["Soy un chatbot diseñado para ayudarte con diversas tareas y responder tus preguntas.", "Soy un chatbot de inteligencia artificial aquí para ayudarte con lo que necesites.", "¡Soy tu amigable chatbot vecino!"]
+        },
+        {
+            "tag": "ayuda",
+            "patterns": ["ayuda", "¿puedes ayudarme?", "necesito asistencia", "asísteme por favor", "ayúdame"],
+            "responses": ["Por supuesto, estoy aquí para ayudarte. ¿En qué necesitas ayuda?", "Claro, haré lo posible por asistirte. ¿En qué necesitas ayuda?", "Estoy listo para ayudarte. ¿Cuál es el problema?", "¿Cómo puedo asistirte hoy?", "¡Estoy a tu servicio!"]
+        }
+    ]
+}
