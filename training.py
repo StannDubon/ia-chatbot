@@ -3,6 +3,8 @@ import json
 import pickle
 import numpy as np
 import nltk
+nltk.download('punkt')
+nltk.download('wordnet')
 from nltk.stem import WordNetLemmatizer
 from keras.models import Sequential
 from keras.layers import Dense, Dropout
@@ -59,6 +61,6 @@ model.add(Dense(len(train_y[0]), activation='softmax'))
 
 sgd = SGD(learning_rate=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
-hist = model.fit(np.array(train_x), np.array(train_y), epochs=700, batch_size=5, verbose=1)
+hist = model.fit(np.array(train_x), np.array(train_y), epochs=50000, batch_size=5, verbose=1)
 model.save('chatbotmodel.h5', hist)
 print("Done")
